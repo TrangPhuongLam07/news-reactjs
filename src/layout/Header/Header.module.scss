@@ -1,0 +1,132 @@
+.header {
+    width: 100%;
+    height: 70px;
+    // background-color: rgba(21, 21, 126, 0.815);
+    background-image:linear-gradient(rgb(31, 31, 223),rgb(155, 155, 241));
+    position:fixed;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar {
+    width: 100%;
+    height: 100%;
+    // padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 50px;
+    font-weight: 500;
+    color: var(--white-color);
+}
+
+// category
+.nav-list {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.nav-item {
+    display: inline-block;
+    list-style-type: none;
+    padding: 0 20px;
+}
+
+.nav-item-link {
+    color: var(--white-color);
+    text-decoration: none;
+    font-size: 20px;
+
+    &:hover {
+        color: var(--text-color);
+    }
+}
+
+//other
+.other {
+    display: flex;
+    align-items: center;
+}
+
+//login , register
+.actions {
+    padding-left: 10px;
+    position: relative;
+}
+
+.action-link {
+    color: var(--white-color);
+    padding: 0 10px;
+
+    &:hover {
+        color: var(--text-color);
+    }
+}
+
+.seperate::after {
+    content: '';
+    width: 1px;
+    background-color: var(--white-color);
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 78px;
+}
+
+//user
+.user {
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    img {
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+}
+
+.fullname {
+    color: var(--white-color);
+    margin-left: 5px;
+    position: relative;
+}
+
+.info {
+    position: absolute;
+    width: 100%;
+    margin: 10px 0;
+    background-color: var(--white-color);
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    button {
+        padding: 10px 0;
+        width: 100%;
+        color: var(--text-color);
+
+        a {
+            color: var(--text-color);
+        }
+
+        &:first-child {
+            border-bottom: solid 1px rgb(224, 213, 213);
+        }
+
+        &:hover {
+            background-color: var(--primary-color);
+            color: var(--white-color);
+        }
+
+        &:hover a {
+            color: var(--white-color);
+        }
+    }
+}

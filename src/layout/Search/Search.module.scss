@@ -1,0 +1,38 @@
+.search {
+    padding-left: 15px;
+    background-color: var(--white-color);
+    height: 40px;
+    width: 350px;
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+
+    input {
+        flex: 1;
+        height: 100%;
+        font-size: 20px;
+        color:var(--text-color);
+    }
+
+    .clear{
+        padding:0 10px;
+        color:rgb(167 167 171);
+    }
+
+    button {
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+        height: 100%;
+        width: 50px;
+        font-size: 20px;
+        color: var(--black-color);
+        background-color: rgb(216, 211, 211);
+
+        &:hover{
+            opacity: 0.7;
+        }
+
+    }
+}

@@ -1,0 +1,29 @@
+
+.home{
+    margin-top:80px;
+}
+
+.news__new-title{
+    border-bottom:3px solid var(--primary-color);
+    margin-bottom:10px;
+    padding:0 12px;
+    p{
+        display: inline-block;
+        padding: 0 5px;
+        margin:5px 0;
+        font-weight: 500;
+    }
+}
+
+.icon-title{
+    display:inline-block;
+    font-size: 10px;
+}
+
+.news__new{
+    margin-top:10px;
+}
+
+.news__new-item{
+    margin-top:20px;
+}
